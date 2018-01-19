@@ -73,7 +73,8 @@
     "test": "gulp test",
     "test:auto": "gulp test:auto",
     "bower": "bower",
-    "postinstall": "bower install && gulp build",
+    "heroku-prebuild": "npm install -g bower",
+    "heroku-postbuild": "bower install && gulp build",
     "start": "node server.js"
   },
   "eslintConfig": {
