@@ -73,7 +73,7 @@
     "test": "gulp test",
     "test:auto": "gulp test:auto",
     "bower": "bower",
-    "heroku-prebuild": "npm install gulp-cli & npm install bower",
+    "heroku-prebuild": "npm install gulp-cli && npm install bower",
     "heroku-postbuild": "bower install && gulp build",
     "start": "node server.js"
   },
