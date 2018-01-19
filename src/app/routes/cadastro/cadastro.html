@@ -1,0 +1,18 @@
+<h1>Cadastro</h1>
+
+<div ng-if="vm.lista">
+  <ul>
+    <li ng-repeat="item in vm.lista">
+      <a href="/cadastro/{{$index}}">
+        {{item.nome}} {{item.sobrenome}}
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div ng-if="vm.cadastro">
+  <p>Nome: {{vm.cadastro.nome}}</p>
+  <p>Sobrenome: {{vm.cadastro.sobrenome}}</p>
+</div>
+
+<p ng-hide="vm.lista || vm.cadastro">Carregando...</p>
